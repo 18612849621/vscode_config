@@ -5,8 +5,8 @@
     "editor.formatOnSave": true,
     // 调整代码编辑器的字体大小
     "editor.fontSize": 22,
-    // 图标主题
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    // 图标主题
     // 不要弹出确认拖放
     "explorer.confirmDragAndDrop": false,
     // 不要弹出确认删除
@@ -177,33 +177,6 @@
                 }
             ]
         },
-        // 这个和 Ctrl + P 效果是等同的，即，快速搜索打开文件
-        {
-            "before": [
-                "leader",
-                "g",
-                "g"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen"
-                }
-            ]
-        },
-        // 在当前打开的项目中搜索文本
-        {
-            "before": [
-                "leader",
-                "f",
-                "g"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.view.search"
-                }
-            ]
-        },
-        // 快速运行 
     ],
     // vim 的 visual 模式下的键位绑定
     "vim.visualModeKeyBindings": [

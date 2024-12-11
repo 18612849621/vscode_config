@@ -15,6 +15,10 @@
         "command": "workbench.action.navigateUp",
         "when": "terminal.active && terminalFocus"
     },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.kill"
+    },
     // 编写代码时的智能提示框的上下选择
     {
         "key": "ctrl+j",
@@ -26,4 +30,39 @@
         "command": "selectPrevSuggestion",
         "when": "vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+    // vim 模式下的左侧的文件管理器的操作
+    // 在文件管理器中搜索
+    {
+        "key": "/",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind && !inputFocus"
+    },
+    // 新建一个文件
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // 新建一个文件夹
+    {
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // 给文件重命名
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // 删除文件
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    }    
 ]
