@@ -111,24 +111,6 @@
                 }
             ]
         },
-        // cmake 快速编译和运行文件，我映射成了 leader + l，这个和直接点击底部状态栏的运行按钮效果是一样的
-        {
-            "before": [
-                "leader",
-                "l"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.terminal.sendSequence",
-                    "args": {
-                        "text": "clear \u000D"
-                    }
-                },
-                {
-                    "command": "cmake.launchTarget"
-                }
-            ]
-        },
         // 在左侧的文件管理器中打开当前文件
         {
             "before": [
@@ -195,56 +177,6 @@
                 }
             ]
         },
-        // 快速在底部的 terminal 中运行 python 文件
-        {
-            "before": [
-                "leader",
-                "p",
-                "y"
-            ],
-            "commands": [
-                "workbench.action.files.saveAll",
-                {
-                    "command": "workbench.action.terminal.sendSequence",
-                    "args": {
-                        "text": "clear \u000D"
-                    }
-                },
-                "workbench.action.terminal.focus",
-                {
-                    "command": "workbench.action.terminal.sendSequence",
-                    "args": {
-                        "text": "python '${file}'\u000D"
-                    }
-                },
-                "workbench.action.focusActiveEditorGroup"
-            ]
-        },
-        // 快速在底部的 terminal 中运行 autohotkey
-        {
-            "before": [
-                "leader",
-                "k",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.files.saveAll",
-                {
-                    "command": "workbench.action.terminal.sendSequence",
-                    "args": {
-                        "text": "clear \u000D"
-                    }
-                },
-                "workbench.action.terminal.focus",
-                {
-                    "command": "workbench.action.terminal.sendSequence",
-                    "args": {
-                        "text": "${file} \u000D"
-                    }
-                },
-                "workbench.action.focusActiveEditorGroup"
-            ]
-        },
         // 这个和 Ctrl + P 效果是等同的，即，快速搜索打开文件
         {
             "before": [
@@ -262,8 +194,8 @@
         {
             "before": [
                 "leader",
-                "g",
-                "f"
+                "f",
+                "g"
             ],
             "commands": [
                 {
@@ -271,31 +203,7 @@
                 }
             ]
         },
-        // 快速运行 java 代码
-        {
-            "before": [
-                "leader",
-                "j",
-                "a"
-            ],
-            "commands": [
-                {
-                    "command": "java.debug.runJavaFile"
-                }
-            ]
-        },
-        // 快速执行 VSCode 的 debug 命令
-        {
-            "before": [
-                "leader",
-                "r",
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.debug.start"
-                }
-            ]
-        },
+        // 快速运行 
     ],
     // vim 的 visual 模式下的键位绑定
     "vim.visualModeKeyBindings": [
@@ -358,18 +266,16 @@
     "window.zoomLevel": 1,
     // 关闭不明 unicode 字符的高亮
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    // 修改窗口的风格为 windows 原生风格
-    "window.titleBarStyle": "native",
     // 标签栏和面包屑的显示和隐藏
     "workbench.editor.showTabs": "multiple",
     "breadcrumbs.enabled": false,
     // 修改窗口标题的显示文字
-    "window.title": "🔥${folderName}-PanPanGo",
+    "window.title": "${folderName}-PanPanGo🔥",
     // 我们在文件管理器中使用 vscode 打开文件时，确保其会在新的 vscode 窗口中打开
     "window.openFilesInNewWindow": "on",
-    // 将 manifest 文件关联到 xml 文件，这样，manifest 文件就可以使用 xml 的语法高亮了
+    // 将 xxx 文件关联到 yyy 文件，这样，xxx 文件就可以使用 yyy 的语法高亮了
     "files.associations": {
-        "*.manifest": "xml"
+        // "*.xxx": "yyy"
     },
     // 大文件的最大可使用内存
     "files.maxMemoryForLargeFilesMB": 8192,
@@ -387,4 +293,5 @@
     // 隐藏菜单栏
     "workbench.editor.tabActionCloseVisibility": false,
     "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "One Dark Pro Mix",
 }

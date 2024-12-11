@@ -1,2 +1,24 @@
 // Place your key bindings in this file to override the defaultsauto[]
-[]
+[
+    // 展示悬浮信息
+    {
+        "key": "ctrl+h ctrl+h",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && vim.active"
+    },
+    // 窗口跳转
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    // 从terminal跳转回上面的窗口
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "terminal.active && terminalFocus"
+    }
+]
