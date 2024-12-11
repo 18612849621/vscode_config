@@ -268,4 +268,5 @@
     "workbench.editor.tabActionCloseVisibility": false,
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "One Dark Pro Mix",
+    "workbench.statusBar.visible": false,
 }
