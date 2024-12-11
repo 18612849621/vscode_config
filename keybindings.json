@@ -1,11 +1,5 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    // 展示悬浮信息
-    {
-        "key": "ctrl+h ctrl+h",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus && vim.active"
-    },
     // 窗口跳转
     {
         "key": "ctrl+h",
@@ -20,5 +14,16 @@
         "key": "ctrl+k",
         "command": "workbench.action.navigateUp",
         "when": "terminal.active && terminalFocus"
-    }
+    },
+    // 编写代码时的智能提示框的上下选择
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "vim.active && suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
 ]
