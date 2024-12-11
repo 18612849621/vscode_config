@@ -4,7 +4,7 @@
     // 编辑器设置在保存时自动格式化
     "editor.formatOnSave": true,
     // 调整代码编辑器的字体大小
-    "editor.fontSize": 18,
+    "editor.fontSize": 22,
     // 图标主题
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
     // 不要弹出确认拖放
@@ -12,7 +12,7 @@
     // 不要弹出确认删除
     "explorer.confirmDelete": false,
     // 设置编辑器的字体
-    "editor.fontFamily": "Source Code Pro",
+    "editor.fontFamily": "Ubuntu Mono, Source Code Pro",
     // 开启编辑器的连字符设置
     "editor.fontLigatures": true,
     // 开始的编辑器
