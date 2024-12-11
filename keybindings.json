@@ -61,8 +61,9 @@
         "command": "deleteFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
+    // 打开文件树
     {
-        "key": "ctrl+shift+e",
-        "command": "workbench.files.action.showActiveFileInExplorer"
-    }    
+        "key": "cmd+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer"
+    }
 ]

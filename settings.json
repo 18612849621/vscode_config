@@ -95,8 +95,9 @@
     // 设置 vim 不接管某些快捷键
     "vim.handleKeys": {
         "<C-a>": false,
-        "<C-f>": false
+        "<C-f>": false,
     },
+    "window.restoreWindows": "none", // 禁用恢复上次窗口
     // vim normal 模式下的键位设置
     "vim.normalModeKeyBindings": [
         // 侧边栏的显示和隐藏的快捷键，我映射成了 leader + e
